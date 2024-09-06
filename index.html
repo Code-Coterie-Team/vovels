@@ -14,15 +14,29 @@
             background-color: #8c7ae6;
             text-align: center;
         }
+
+
+        .main input{
+            text-align: center;
+            width: 600px;
+            margin: 10px;
+            padding: 10px;
+            border-radius: 13px;
+            border: 3px solid red;
+        }
+
+
     </style>
 </head>
 <body>
 
     <h1>شمارش حروف صدادار</h1>
+    <div class="main">
     <label for="inputString">لطفاً یک کلمه وارد کنید:</label>
     <input type="text" id="inputString" />
     <button onclick="countVowels()">شمارش حروف صدادار</button>
     <p id="result"></p>
+</div>
     
 
     <script>
