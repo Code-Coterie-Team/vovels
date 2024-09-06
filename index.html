@@ -14,6 +14,25 @@
     <p id="result"></p>
     
 
+    <script>
+        function countVowels() {
+            const inputString = document.getElementById("inputString").value;
+            const vowels = "aeiou"; // حروف صدادار پیش‌فرض
+            let count = 0;
+
+            // حلقه برای شمارش حروف صدادار در رشته
+            for (let char of inputString.toLowerCase()) {
+                if (vowels.includes(char)) {
+                    count++;
+                }
+            }
+
+            // نمایش نتیجه در صفحه
+            document.getElementById("result").innerText = `تعداد حروف صدادار: ${count}`;
+        }
+    </script>
+
+
   
 </body>
 </html>
